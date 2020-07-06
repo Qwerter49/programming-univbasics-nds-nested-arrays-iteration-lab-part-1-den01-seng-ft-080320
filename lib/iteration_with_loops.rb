@@ -1,16 +1,15 @@
 def find_even_values(src)
   
-  count = 0 
-  tempArray = []
+  row_index = 0 
   
-  while count < src.length do 
-    if src[count] % 2 == 0 do
-      tempArray << src[count]
-      count += 1 
+  while row_index < src.count do 
+    element_index = 0 
+    while element_index < src[row_index].count do 
+      if src[row_index][element_index].even?
+        p src[row_index][element_index]
+      end 
+      element_index =+ 1 
     end 
-    elsif
-      count += 1 
-    end 
-      tempArray
+    row_index += 1 
   end 
-end
+end 
