@@ -7,7 +7,7 @@ def find_even_values(src)
     if src[count].even? do
       tempArray << src[count]
       count += 1 
-    else 
+    elsif 
       count += 1 
     end 
       tempArray
