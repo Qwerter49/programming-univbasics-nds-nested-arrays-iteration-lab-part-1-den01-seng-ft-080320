@@ -4,12 +4,12 @@ def find_even_values(src)
   tempArray = []
   
   while count < src.length do 
-    if src[count].even? 
+    if src[count].even? do
       tempArray << src[count]
       count += 1 
     else 
       count += 1 
     end 
       tempArray
-
+  end 
 end
